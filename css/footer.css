@@ -1,0 +1,106 @@
+.footer {
+    background-color: #080d1d;
+
+    margin-top: 50px;
+    padding: 50px 0px 30px 0px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-figure {
+    color: #fff;
+
+    position: relative;
+
+    display: inline-block;
+}
+
+.footer-img {
+    height: 200px;
+}
+
+.footer-figure-figcaption {
+    position: absolute;
+
+    bottom: 40px;
+    right: -50px;
+}
+
+.footer-figure-figcaption p:nth-child(1) {
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.footer-figure-figcaption p:nth-child(2) {
+    color: #929292;
+}
+
+.informacoes, .footer-figure-figcaption {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.informacoes {
+    color: #fff;
+
+    font-size: 17px;
+}
+
+.informacoes .data {
+    margin-top: 5px;
+}
+
+.informacoes button {
+    height: 50px;
+    width: 70px;
+
+    background-color: #fe435b;
+
+    border: none;
+    border-radius: 5px;
+
+    font-family: 'Poppins';
+    font-weight: 500;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+
+    transition: all 0.2s;
+}
+
+.informacoes button a, .informacoes button a:visited, .informacoes button a:active{
+    text-decoration: none;
+    color: #fff;
+}
+
+.informacoes button:hover {
+    cursor: pointer;
+
+    background-color: #ff2845;
+}
+
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+
+    .footer-figure {
+        display: none;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1199px) {
+
+    .footer-img {
+        height: 150px;
+    }
+
+    .footer-figure-figcaption {
+        font-size: 15px;
+
+        right: -20px;
+        bottom: 20px;
+    }
+}

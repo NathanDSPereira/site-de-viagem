@@ -1,0 +1,152 @@
+.section-promocoes {
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-promocoes h4 {
+    font-size: 2rem;
+
+    margin: 30px 0px 30px 0px;
+}
+
+.promocoes-div-linha {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    padding: 0px 30px 0px 30px;
+}
+
+.promocoes-article {
+    border: 1px solid rgb(169, 137, 137);
+    border-radius: 12px;
+
+    margin-right: 20px;
+    margin-bottom: 20px;
+
+    width: 293px;
+
+    transition: all 0.2s;
+}
+
+.promocoes-article:nth-child(4) {
+    margin-right: 0px;
+}
+
+.promocoes-article:hover {
+    cursor: pointer;
+
+    box-shadow: 0px 0px 10px 5px #9a9696;
+}
+
+.article-img {
+    width: 100%;
+    height: 200px;
+
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.article-informacoes {
+    border-bottom: 1px solid rgb(169, 137, 137);
+
+    padding: 0px 10px 0px 10px;
+}
+
+.article-informacoes h4, .article-informacoes p, .article-informacoes-preco p, .section-promocoes h4 {
+    color: rgb(70, 70, 70);
+}
+
+.article-informacoes h4 {
+    font-size: 1.4em;
+    margin: 10px 0px 20px 0px;
+}
+
+.article-informacoes p {
+    margin-bottom: 10px;
+}
+
+.article-informacoes p:nth-child(3) {
+    margin-bottom: 50px;
+}
+
+.article-informacoes-preco {
+    padding: 0px 10px 10px 10px;
+}
+
+.article-informacoes-preco p {
+    margin-bottom: 5px;
+}
+
+.article-informacoes-preco p:nth-child(1) {
+    margin-top: 20px;
+}
+
+.article-informacoes-preco p:nth-child(3), .article-informacoes-preco p:nth-child(4) {
+    font-size: 17px;
+}
+
+.txtgrande {
+    font-size: 25px;
+}
+
+.section-promocoes button {
+    height: 50px;
+    width: 100px;
+
+    margin-top: 40px;
+
+    background-color: white;
+
+    border: 2px solid #6036fa;
+    border-radius: 3px;
+
+    color: #6036fa;
+    font-weight: bold;
+    font-family: 'Poppins';
+
+    transition: all 0.2s;
+}
+
+.section-promocoes button:hover {
+    cursor: pointer;
+
+    background-color: #6036fa;
+    color: white;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    
+    .section-promocoes-titulo {
+        text-align: center;
+    }
+
+    .promocoes-div-linha {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .promocoes-article {
+        margin-right: 0px;
+
+        width: 260px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1199px) {
+
+    .promocoes-div-linha {
+        flex-direction: row;
+    }
+
+    .promocoes-article {
+        margin: 10px;
+    }
+
+    .promocoes-article:nth-child(4) {
+        margin-right: 10px;
+    }
+}

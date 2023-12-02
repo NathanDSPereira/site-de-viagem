@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/formContato.css">
+    <title>Contato</title>
+</head>
+<body class="body-contato">
+    <header class="header header-contato">    
+        <nav class="header-nav">
+            <div class="header-container-img-aviao">
+                <img src="../img/airplane-g0442b4f4b_640.png" alt="Avião" class="img-aviao">
+            </div>
+
+            <div class="div-nome-logo">
+                <p class="header-logo-destino">Destino</p>
+                <p class="header-logo-agencia-viagem">Agencia de viagem</p>
+            </div>
+
+            <ul class="header-nav-lista">
+                <li><a href="#home">Home</a></li>
+                <li>Sobre nós</li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li>Notícias</li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+
+            <form action="#" method="#" class="header-nav-form">
+                <button class="nav-form-button">
+                    <img src="../img/magnifying-glass-g4201ecffe_640.png" alt="Lupa" class="img-lupa">
+                </button>
+            </form>
+        </nav>
+    </header>
+
+    <main class="main">
+        <form action="#" method="#" class="form-contato">
+            <label for="name" class="form-label">Nome:</label>
+            <input type="text" id="name" class="form-input" placeholder="Nome" required>
+
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" id="email" class="form-input" placeholder="seuemail@dominio.com" required>
+
+            <label for="assunto" class="form-label">Assunto:</label>
+            <input type="text" id="assunto" class="form-input" placeholder="Assunto" required>
+
+            <label for="mensagem" class="form-label">Mensagem:</label>
+            <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Escreva sua mensagem aqui" class="form-input form-textarea" required></textarea>
+
+            <input type="submit" class="form-button-submit">
+        </form>
+    </main>
+
+    <footer class="footer">
+        <figure class="footer-figure">
+            <img src="../img/airplane-g0442b4f4b_640.png" alt="Avião" class="footer-img">
+            <figcaption class="footer-figure-figcaption">
+                <p>Destino</p>
+                <p>Agencia de viagem</p>
+            </figcaption>
+        </figure>
+
+        <div class="informacoes">
+            
+            <p>&#169; Desenvolvido por Nathan Pereira</p>
+            <p class="data">2023</p>
+        </div>
+    </footer>
+</body>
+</html>

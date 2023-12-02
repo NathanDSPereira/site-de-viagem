@@ -1,0 +1,293 @@
+body {
+    font-family: 'Poppins';
+
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    height: 90vh;
+}
+
+.header-container-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 101%;
+
+    z-index: -2;
+    
+    text-align: center;
+}
+
+.header-background {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+.header-nav {
+    background-color: #131a2f ;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 6px;
+
+    margin: 70px 120px 100px 120px;
+
+    height: 170px;
+}
+
+.header-container-img-aviao {
+    position: relative;
+    height: 100px;
+    width: 100px;
+}
+
+.img-aviao {
+    height: 64px;
+
+    position: absolute;
+    top: -10px;
+}
+
+.div-nome-logo {
+    width: 30%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;   
+}
+
+.header-logo-destino {
+    font-size: 2em;
+    font-weight: 300;
+    color: white;
+}
+
+.header-logo-agencia-viagem {
+    color: #929292;
+}
+
+.header-nav-lista {
+    display: flex;
+    width: 70%;
+    justify-content: flex-end;
+}
+
+.header-nav-lista li {
+    margin-right: 20px;
+    margin-bottom: 10px;
+    color: white;
+
+    transition: all 0.2s;
+}
+
+.header-nav-lista a, .header-nav-lista a:visited, .header-nav-lista a:active {
+    text-decoration: none;
+    color: white;
+
+    transition: all 0.2s;
+}
+
+.header-nav-lista li:hover, .header-nav-lista a:hover {
+    cursor: pointer;
+    color: #fe435b;
+}
+
+.header-nav-lista li:nth-last-child(1) {
+    margin-right: 50px;
+}
+
+.header-nav-form {
+    padding: 60px 50px 60px 50px;
+
+    height: 100%;
+
+    background: #fe435b;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+    transition: all 0.2s;
+
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.header-nav-form:hover {
+    cursor: pointer;
+    background: #ff2845;
+}
+
+.nav-form-button {
+    background-color: transparent;
+    border: none;
+}
+
+.nav-form-button:hover {
+    cursor: pointer;
+}
+
+.img-lupa {
+    height: 40px;
+
+    filter: invert(1);
+}
+
+.titulos-header {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-h1 {
+    text-transform: uppercase;
+    font-size: 230px;
+    opacity: 0.34;
+    font-weight: 900;
+
+    color: rgb(56, 10, 10);
+}
+
+.header-h2 {
+    font-size: 4em;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+
+    .header{
+        height: 70vh;
+
+        padding-top: 30px;
+    }
+
+    .header-h1, .header-h2 {
+        font-size: 20px;
+
+        visibility: hidden;
+    }
+
+    .header-nav {
+        flex-wrap: wrap;
+
+        margin: 0px;
+
+        justify-content: flex-end;
+        align-items: flex-end;
+    }
+
+    .div-nome-logo, .img-aviao, .header-container-img-aviao {
+        display: none;
+    }
+
+    .header-nav-lista {
+        width: 100%;
+
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        font-size: 20px;
+
+        margin-top: 14px;
+
+        padding: 0px 5px 0px 5px;
+    }
+
+    .header-nav-lista li:nth-last-child(1) {
+        margin-right: 0px;
+    }
+
+    .header-nav-form {
+        padding: 6px;
+
+        height: 40%;
+
+        border-radius: 0px;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1199px) {
+
+    .header {
+        max-width: 100%;
+        height: 80vh;
+
+        padding-top: 0px;
+    }
+
+    .header-nav-form {
+        padding: 40px;
+    }
+
+    .header-nav {
+        justify-content: flex-end;
+
+        margin-bottom: 50px;
+        margin-right: 80px;
+        margin-left: 80px; 
+    }
+
+    .header-nav-lista {
+        justify-content: center;
+
+        width: 100%;
+    }
+
+    .header-nav-lista li:nth-last-child(1) {
+        margin-right: 0px;
+    }
+
+    .header-h1 {
+        font-size: 150px;
+        
+        visibility: visible;
+    }
+
+    .header-h2 {
+        font-size: 20px;
+
+        visibility: hidden;
+    }
+
+    .div-nome-logo, .img-aviao, .header-container-img-aviao {
+        display: none;
+    }
+}
+
+@media all and (min-width: 1200px) and (max-width: 1300px){
+
+    .div-nome-logo, .img-aviao, .header-container-img-aviao {
+        display: initial;
+    }
+
+    .header-nav-lista {
+        width: 70%;
+
+        justify-content: initial;
+    }
+
+    .header-nav-form {
+        padding: 50px;
+    }
+
+    .header-h2 {
+        visibility: visible;
+
+        font-size: 3.5em;
+    }
+}

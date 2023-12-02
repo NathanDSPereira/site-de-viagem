@@ -1,0 +1,95 @@
+.body-contato {
+    /* background-color: rgb(146, 146, 146); */
+
+    background-image: url(../img/alberta-ge209b8423_1920.jpg);
+}
+
+.header-contato {
+    height: 35vh;
+}
+
+.main, .form-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-contato {
+    width: 60%;
+}
+
+.form-label {
+    align-self: flex-start;
+
+    margin-bottom: 6px;
+
+    color: #fff;
+}
+
+.form-input {
+    height: 40px;
+    width: 100%;
+
+    padding: 10px;
+
+    margin-bottom: 20px;
+    
+    border: none;
+    border-bottom: 1px solid rgb(0, 0, 0);
+
+    font-size: 18px;
+}
+
+.form-input, .form-button-submit {
+    transition: all 0.2s;
+}
+
+.form-input:hover, .form-button-submit:hover {
+    cursor: pointer;
+
+    box-shadow: 5px 5px 10px 0px rgb(0, 0, 0);
+}
+
+.form-input::placeholder {
+    font-style: italic;
+}
+
+.form-textarea, .form-button-submit {
+    font-family: 'Poppins';
+}
+
+.form-textarea {
+    height: auto;
+
+    resize: none;
+
+    font-size: 18px;
+}
+
+.form-button-submit {
+    height: 40px;
+    width: 150px;
+
+    align-self: flex-end;
+
+    background-color: #fe435b;
+
+    border: none;
+
+    font-size: 15px;
+}
+
+.form-button-submit:hover {
+    background: #ff2845;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+
+    .header-contato {
+        height: 50vh;
+    }
+
+    .form-contato {
+        width: 70%;
+    }
+}

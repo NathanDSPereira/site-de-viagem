@@ -1,0 +1,125 @@
+.section-encontrar-aventura {
+    background-image: url(../img/notebook-gee422fa22_1280.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+
+    padding-bottom: 100px;    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section-encontrar-aventura-titulo {
+    margin: 50px 0px 60px 0px;
+
+    font-size: 2rem;
+    font-weight: 400;
+
+    text-align: center;
+}
+
+.encontrar-aventura-form {
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+
+    flex-wrap: wrap;
+
+    font-size: 18px;
+}
+
+.encontrar-aventura-article {
+    margin-right: 15px;
+    margin-bottom: 10px;
+}
+
+.encontrar-aventura-article h4 {
+    margin-bottom: 8px;
+
+    font-weight: 400;
+    color: white;
+}
+
+.article-input::placeholder {
+    color: #040303;
+    font-style: normal;
+
+    font-family: 'Poppins';
+}
+
+.article-select {
+    border: solid 2px rgb(43, 33, 33);
+    border-radius: 5px;
+
+    color: #040303;
+/* #939393 */
+    background: transparent;
+    height: 60px;
+    width: 200px;
+
+    transition: all 0.2s;
+
+    font-size: 18px;
+}
+
+.article-select:hover {
+    cursor: pointer;;
+    border-color: #ff2845;
+}
+
+.article-precos {
+    width: 111px;
+}
+
+.encontrar-aventura-button {
+    margin-top: 25px;
+
+    background-color: #fe435b;
+
+    border: none;
+
+    font-style: normal;
+    font-weight: 400;
+    color: white;
+    font-size: 1.4rem;
+
+    width: 150px;
+
+    transition: all 0.2s;
+}
+
+.encontrar-aventura-button:hover {
+    background-color: #ff2845;
+    cursor: pointer;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+    
+    .section-encontrar-aventura-titulo {
+        margin: 30px 0px 40px 0px;
+
+        font-size: 28px;
+
+        line-height: 30px;
+    }
+    
+    .encontrar-aventura-article h4 {
+        color: #000;
+    }
+}
+
+@media all and (min-width: 768px) and (max-width: 1199px) {
+
+    .section-encontrar-aventura-titulo {
+        margin: 40px 0px 50px 0px;
+
+        font-size: 2em;
+
+        line-height: inherit;
+    }
+}
